@@ -1,0 +1,28 @@
+main {
+    background-color: #17233B;
+}
+
+#formulario {
+    max-width: 400px;
+}
+
+small {
+    font-size: 0.7em !important;
+}
+
+#icone-info {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#olho {
+    cursor: pointer;
+    transition: 1s;
+}
+
+#olho:hover {
+    color: #17233B;
+}

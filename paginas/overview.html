@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dropout Tool | Overview </title>
+        <link rel="icon" href="../img/favicon.png">
+
+        <!-- Reset CSS-->
+        <link rel="stylesheet" href="../css/reset.css" >
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- FontAwesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/overview.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        
+    </head>
+    <body>
+        <header class="cabecalho fixed-top bg-white">
+            <nav class="container navbar">
+                <a class="fas fa-bars nav-link" href="#"></a>
+                <div class="navbar-brand m-0">
+                    <a class="navbar-brand" href="#" id="logo">DropoutTool</a>
+                </div>          
+                <div>
+                    <form class="form-inline ml-auto" id="formulario-busca" action="pesquisa.html">
+                        <input type="text" class="form-control text-body" id="input-search" name="q" placeholder="Nome ou matrícula">
+                        <a class="fas fa-search nav-link mr-0" href="#" ></a>
+                    </form>
+                </div>
+                <div class="nav-item dropdown">
+                    <a class="nav-item fas fa-home nav-link" href="../index.html" id="casa-desktop"></a>
+                    <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../img/Me.jpg" id="foto-perfil" class="mr-1">
+                        Pierre Brito
+                    </a>
+                    <div class="dropdown-menu  pr-1 w-100" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="perfil.html">
+                            <i class="fas fa-user mr-1"></i> Perfil
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-cog mr-1"></i> Configurações
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-danger" href="../login.html">
+                            <i class="fas fa-arrow-left mr-1"></i> Sair
+                        </a>
+                    </div>
+                </div>
+            </nav>
+             <!-- BARRA DE NAVEGAÇÃO MOBILE -->
+            <nav class="nav-esquerda pt-1 bg-light">
+                <div class="font-weight-bold bg-light rounded-0 p-2 pl-3 ">
+                    <img src="../img/Me.jpg" id="foto-perfil" class="mr-3">
+                    Pierre Carlos de Brito
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-light p-0">
+                        <a class="d-block p-3" href="../index.html" id="casa-mobile">
+                            <i class="fas fa-home "></i> Home
+                        </a> 
+                    </li>
+                    <li class="list-group-item bg-light p-0">
+                        <a href="perfil.html" class="d-block p-3">
+                            <i class="fas fa-user mr-1"></i> Perfil
+                        </a>
+                    </li>
+                    <li class="list-group-item bg-light p-0">
+                        <a href="#" class="d-block p-3">
+                            <i class="fas fa-cog mr-1"></i> Configurações
+                        </a>
+                    </li>
+                    <li class="list-group-item bg-light p-0"> 
+                        <a class="text-danger p-3 d-block" href="../login.html">
+                            <i class="fas fa-arrow-left mr-1"></i> Sair
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+             <!-- BARRA DE PROCURA MOBILE -->
+             <div class="nav-procura p-4 bg-light">
+                <form class="">
+                    <input type="text" placeholder="Procura por..." class="form-control text-body">
+                    <input type="submit" class="btn btn-primary w-100 mt-2" value="Buscar">
+                </form>
+            </div>
+        </header>
+
+        <main class="container">
+            <div class="row p-2">
+                <div class="card col-sm bg-white m-2 p-0 pb-5 shadow-sm text-center">
+                    <h6 class="card-header titulo-grafico">Gráfico 1</h6>
+                
+                    <div class="card-footer text-right">
+                        <button class="btn btn-primary">Mais informações</button>
+                    </div>
+                </div>
+                <div class="card col-sm bg-white m-2 p-0 pb-5 shadow-sm text-center">
+                    <h6 class="card-header titulo-grafico">Gráfico 2</h6>
+                    <div class="card-footer text-right">
+                        <button class="btn btn-primary">Mais informações</button>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="card shadow-sm">
+                <div class="card-header bg-danger">        
+                    <h6 class="m-0 text-white d-inline">Alunos em situação de risco:</h6>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <i class="fas fa-user-graduate mr-2"></i>Xerebebeu das Silva Virgulino
+                            <button class="btn btn-primary ml-auto">Ver perfil</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <i class="fas fa-user-graduate mr-2"></i>Hobbit dos Anéis 
+                            <button class="btn btn-primary ml-auto">Ver perfil</button>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <i class="fas fa-user-graduate mr-2"></i>João das Neves Targaryen
+                            <button class="btn btn-primary ml-auto">Ver perfil</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center pt-3 pb-3">
+            <span class="text-muted h6" id="text-copy">&copy; 2019: IFRN - Campus São Gonçalo do Amarante</span>
+        </footer>
+        
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/nav.js"></script>
+    </body>
+</html>

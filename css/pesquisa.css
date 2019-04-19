@@ -1,0 +1,26 @@
+body, main {
+    background-color: #F7F8FB;
+}
+
+.pagina-atual {
+    background-color: #17233B;
+    color: #FFFFFF !important;
+}
+
+.pagina-atual:hover {
+    background-color: #17233B;
+    color: #FFFFFF !important;
+}
+
+tr {
+    color: #17233B;
+}
+
+tbody tr {
+    transition: 0.5s;
+}
+
+tbody tr:hover {
+    transform: translateX(5px);
+    background-color: #f8f9fa;
+}

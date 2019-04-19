@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Dropout Tool</title>
+      <link rel="icon" href="img/favicon.png">
+
+      <!-- Reset CSS -->
+      <link rel="stylesheet" href="css/reset.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- FontAwesome icons -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <!-- My CSS's -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/login.css">   
+  </head>
+  <body>
+
+      <main class="vh-100 d-flex justify-content-center align-items-center">
+          <form class="bg-white shadow p-4 pt-5 w-100 position-relative" id="formulario" action="paginas/overview.html">
+              <h3 id="logo" class="text-center mb-5">Dropout Tool<small class="text-muted ml-1">Login</small></h3>
+
+              <!-- AVISO DE LOGIN ERRADO -->
+              <div class="alert alert-danger mt-1 rounded-0" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+                  Os dados estão incorretos. Verifique-os ou busque informações no 
+                  <a class="alert-link" href="https://suap.ifrn.edu.br/accounts/login/" target="_blank">SUAP</a>.
+              </div>
+
+              <!-- CAMPPOS DE TEXTO -->
+              <label for="campo_matricula" class="text-muted mt-1 font-weight-bold">Matrícula: </label>
+              <input type="text" name="matricula" class="form-control font-weight-bold rounded-0 text-body" id="campo_matricula" required="true">
+
+              <label for="campo_senha" class="text-muted mt-2 font-weight-bold">Senha: </label>
+              <div class="input-group mb-2">
+                  <input type="password" class="form-control font-weight-bold rounded-0 text-body" name="senha" id="campo_senha" required="true">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-0" id="olho"><i class="far fa-eye" id="icone-olho"></i></span>
+                  </div>
+              </div>
+
+              <button class="btn mt-4 font-weight-bold w-100">Entrar</button>
+              <p id="copy" class="text-center text-muted mt-3"> &copy; 2019 IFRN | Integrado ao <a href="https://suap.ifrn.edu.br/accounts/login/" target="_blank">SUAP</a></p>
+              
+              <i class="fas fa-info-circle text-muted" id="icone-info"  data-toggle="modal" data-target="#modal-info"></i>
+          </form>
+
+          <!-- MODAL DE INFORMAÇÕES SOBRE O SISTEMA -->
+          <div class="modal fade" id="modal-info"  tabindex="-1" role="dialog" aria-labelledby="modal-info" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                      <h5 class="modal-title">
+                        <i class="fas fa-info-circle mr-2"></i> Sobre o Dropout Tool
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Sistema WEB com foco nos servidores do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte
+                            para a visualização de dados de evasão escolar.
+                        </p>
+                        <p>
+                            Possui comunicação com o SUAP (Sistema Unificado de Administração Pública), portanto faça o login com a matrícula
+                            e a senha com que você tem acesso a ele.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </main>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="js/login.js"></script>
+    </body>
+</html>

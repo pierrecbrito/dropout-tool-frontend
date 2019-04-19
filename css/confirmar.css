@@ -1,0 +1,8 @@
+.card {
+    border-left: 5px solid #17233B !important;
+    transition: 1s;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
