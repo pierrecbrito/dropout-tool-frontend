@@ -26,3 +26,7 @@ small {
 #olho:hover {
     color: #17233B;
 }
+
+#icone-olho {
+    width: 20px;
+}
