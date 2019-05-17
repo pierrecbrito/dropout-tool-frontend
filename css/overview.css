@@ -3,11 +3,6 @@ body, main {
 }
 
 /** MAIN : */
-
-.card {
-    height: 350px;
-}
-
 .list-group-item {
     border: none !important;
     border-bottom: 1px solid #17233B !important;
