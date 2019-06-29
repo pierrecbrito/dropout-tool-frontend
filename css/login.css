@@ -1,5 +1,5 @@
 main {
-    background-color: #17233B;
+    background-color: #F3F5F9;
 }
 
 #formulario {
@@ -29,4 +29,12 @@ small {
 
 #icone-olho {
     width: 20px;
+}
+
+#visual-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 50vh;
+    background-color: #17233B;
 }

@@ -14,7 +14,7 @@ a:hover {
 .btn {
     background-color: #17233B;
     border: 2px solid  #17233B;
-    transition: 0.25s;
+    transition: 0.20s;
     box-shadow: none !important;
     color: #FFFFFF !important;
     cursor: pointer;
@@ -22,8 +22,6 @@ a:hover {
 }
 
 .btn:hover, .btn:active {
-    background-color: #FFFFFF !important;
-    color: #17233B !important;
     border-color: #17233B !important;
 }
 
@@ -32,7 +30,7 @@ a:hover {
 }
 
 .form-control:focus {
-    border: 2px solid #17233B;
+    border: 1px solid #17233B;
 }
 
 .dropdown-item:active {
