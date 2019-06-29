@@ -17,10 +17,10 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/overview.css">
         <link rel="stylesheet" href="../css/navbar.css">
-        
+        <link rel="stylesheet" href="../css/sidebar.css">
     </head>
     <body>
-        <header class="cabecalho fixed-top bg-white">
+        <header class="cabecalho bg-white">
             <nav class="container navbar">
                 <a class="fas fa-bars nav-link" href="#"></a>
                 <div class="navbar-brand m-0">
@@ -90,68 +90,72 @@
             </div>
         </header>
 
-        <main class="container">
-            <div class="row p-2">
-                <div class="card col-sm bg-white m-2 p-0 pb-5 shadow-sm text-center">
-                    <h6 class="card-header titulo-grafico">Gráfico 1</h6>
-                    <div class="card-body">
-                        <img src="../img/grafico_pizza.png" alt="Gráfico 1" class="img-fluid">
-                    </div> 
-                    <div class="card-footer text-right">
-                        <button class="btn btn-primary">Mais informações</button>
+        <main class="">
+            <div id="sidebar">Hello World</div>
+            <div id="content">
+                <div class="row p-2">
+                        <div class="card col-sm bg-white m-2 p-0 pb-5 shadow-sm text-center">
+                            <h6 class="card-header titulo-grafico">Gráfico 1</h6>
+                            <div class="card-body">
+                                <img src="../img/grafico_pizza.png" alt="Gráfico 1" class="img-fluid">
+                            </div> 
+                            <div class="card-footer text-right">
+                                <button class="btn btn-primary">Mais informações</button>
+                            </div>
+                        </div>
+                        <div class="card col-sm bg-white m-2 p-0 pb-5 shadow-sm text-center">
+                            <h6 class="card-header titulo-grafico">Gráfico 2</h6>
+        
+                            <div class="card-body">
+                                <img src="../img/grafico_pizza.png" alt="Gráfico 2" class="img-fluid">
+                            </div> 
+        
+                            <div class="card-footer text-right">
+                                <button class="btn btn-primary">Mais informações</button>
+                            </div>
+                        </div>
+                    </div>   
+        
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-danger">        
+                            <h6 class="m-0 text-white d-inline">Alunos em situação de risco:</h6>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr class="font-weight-bold">
+                                        <th scope="col">Nome</th>
+                                        <th scope="col">Matrícula</th>
+                                        <th scope="col">Ação</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col">Pierre Carlos de Brito</th>
+                                        <th scope="col">20161164010004</th>
+                                        <th scope="col"><a class="btn" href="perfil.html">Ver perfil</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Pierre Carlos de Brito</th>
+                                        <th scope="col">20161164010004</th>
+                                        <th scope="col"><a class="btn">Ver perfil</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Pierre Carlos de Brito</th>
+                                        <th scope="col">20161164010004</th>
+                                        <th scope="col"><a class="btn">Ver perfil</a></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                <div class="card col-sm bg-white m-2 p-0 pb-5 shadow-sm text-center">
-                    <h6 class="card-header titulo-grafico">Gráfico 2</h6>
-
-                    <div class="card-body">
-                        <img src="../img/grafico_pizza.png" alt="Gráfico 2" class="img-fluid">
-                    </div> 
-
-                    <div class="card-footer text-right">
-                        <button class="btn btn-primary">Mais informações</button>
-                    </div>
-                </div>
-            </div>   
-
-            <div class="card shadow-sm">
-                <div class="card-header bg-danger">        
-                    <h6 class="m-0 text-white d-inline">Alunos em situação de risco:</h6>
-                </div>
-                <div class="card-body">
-                    <table class="table table-striped table-hover">
-                        <thead>
-                            <tr class="font-weight-bold">
-                                <th scope="col">Nome</th>
-                                <th scope="col">Matrícula</th>
-                                <th scope="col">Ação</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="col">Pierre Carlos de Brito</th>
-                                <th scope="col">20161164010004</th>
-                                <th scope="col"><a class="btn" href="perfil.html">Ver perfil</a></th>
-                            </tr>
-                            <tr>
-                                <th scope="col">Pierre Carlos de Brito</th>
-                                <th scope="col">20161164010004</th>
-                                <th scope="col"><a class="btn">Ver perfil</a></th>
-                            </tr>
-                            <tr>
-                                <th scope="col">Pierre Carlos de Brito</th>
-                                <th scope="col">20161164010004</th>
-                                <th scope="col"><a class="btn">Ver perfil</a></th>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                    <footer class="text-center pt-3 pb-3">
+                            <span class="text-muted h6" id="text-copy">&copy; 2019: IFRN - Campus São Gonçalo do Amarante</span>
+                    </footer>
+            </div>     
         </main>
 
-        <footer class="text-center pt-3 pb-3">
-            <span class="text-muted h6" id="text-copy">&copy; 2019: IFRN - Campus São Gonçalo do Amarante</span>
-        </footer>
+     
         
 
     <!-- Optional JavaScript -->
@@ -160,5 +164,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="../js/nav.js"></script>
+    <script src="../js/sidebar.js"></script>
     </body>
 </html>

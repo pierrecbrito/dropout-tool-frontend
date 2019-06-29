@@ -1,0 +1,30 @@
+main {
+    justify-content: space-around;
+}
+
+#sidebar {
+    position: fixed;
+    background-color: #17233B;
+    width: 90%;
+    max-width: 350px;;
+    min-height: 100vh;
+    width: 20%;
+}
+
+.sidebar-on {
+    
+}
+
+.sidebar-off {
+
+}
+
+#content {
+    width: 75%;
+    margin-left: 340px;
+}
+
+
+footer {
+    
+}

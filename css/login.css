@@ -16,14 +16,15 @@ small {
     bottom: 5px;
     font-size: 1.1em;
     cursor: pointer;
+    color: #17233B;
 }
 
 #olho {
     cursor: pointer;
     transition: 1s;
-}
-
-#olho:hover {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #8F8F8F;
     color: #17233B;
 }
 
