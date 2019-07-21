@@ -6,25 +6,22 @@ main {
     max-width: 400px;
 }
 
-small {
-    font-size: 0.7em !important;
-}
-
 #icone-info {
     position: absolute;
     right: 5px;
     bottom: 5px;
     font-size: 1.1em;
-    cursor: pointer;
-    color: #17233B;
 }
 
-#olho {
-    cursor: pointer;
+#olho { 
     transition: 1s;
     background: transparent;
     border: none;
     border-bottom: 2px solid #8F8F8F;
+}
+
+#icone-info, #olho {
+    cursor: pointer;
     color: #17233B;
 }
 

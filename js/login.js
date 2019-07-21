@@ -12,3 +12,5 @@ $('#olho').on('click', evento => {
         $('#icone-olho').addClass('fa-eye')
     }  
 })
+
+$('#visual-container').slideUp(1000)
