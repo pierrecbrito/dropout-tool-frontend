@@ -1,6 +1,5 @@
 a:hover {
     text-decoration: none;
-    color: #17233B;
 }
 
 #logo, a, h1, h2, h3, h4, h5, h6 {
@@ -13,8 +12,6 @@ a:hover {
 
 .btn {
     background-color: #17233B;
-    border: 2px solid  #17233B;
-    transition: 0.20s;
     box-shadow: none !important;
     color: #FFFFFF !important;
     cursor: pointer;
