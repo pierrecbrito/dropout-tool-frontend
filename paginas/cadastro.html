@@ -20,8 +20,9 @@
   <body>
 
       <main class="vh-100 d-flex justify-content-center align-items-center">
-          <form class="bg-white shadow p-4 pt-5 w-100 position-relative" id="formulario" action="paginas/overview.html">
-              <h3 id="logo" class="text-center mb-5">Dropout Tool<small class="text-muted ml-1">Cadastro</small></h3>
+            <div id="visual-container"></div>
+            <form class="bg-white shadow p-4 pt-5 w-100 position-relative" id="formulario" action="paginas/overview.html">
+              <h3 id="logo" class="text-center mb-5">Dropout Tool | <span class="text-muted font-weight-normal ml-1">Cadastro</span></h3>
 
               <!-- AVISO DE LOGIN ERRADO -->
               <div class="alert alert-danger mt-1 rounded-0" role="alert">
@@ -33,12 +34,12 @@
               </div>
 
               <!-- CAMPPOS DE TEXTO -->
-              <label for="campo_matricula" class="text-muted mt-1 font-weight-bold">Matrícula: </label>
-              <input type="text" name="matricula" class="form-control font-weight-bold rounded-0 text-body" id="campo_matricula" required="true">
+              <label for="campo_matricula" class="mt-1 font-weight-bold">Matrícula: </label>
+              <input type="text" name="matricula" class="form-control rounded-0 text-body" id="campo_matricula" required="true">
 
-              <label for="campo_senha" class="text-muted mt-2 font-weight-bold">Senha: </label>
+              <label for="campo_senha" class="mt-2 font-weight-bold">Senha: </label>
               <div class="input-group mb-2">
-                  <input type="password" class="form-control font-weight-bold rounded-0 text-body" name="senha" id="campo_senha" required="true">
+                  <input type="password" class="form-control  rounded-0 text-body" name="senha" id="campo_senha" required="true">
                   <div class="input-group-append">
                     <span class="input-group-text rounded-0" id="olho"><i class="far fa-eye" id="icone-olho"></i></span>
                   </div>

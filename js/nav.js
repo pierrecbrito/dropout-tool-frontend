@@ -1,7 +1,14 @@
 
 $(".fa-bars").click(function(event) {
-    $('.nav-esquerda').fadeToggle(500)
-    event.preventDefault()
+    //$('.nav-esquerda').toggleClass("w-100")
+    //$('.nav-esquerda').toggleClass("w-0")
+
+    $('.nav-esquerda').animate({width: 'toggle'});
+
+})
+
+$('#relatorios').click(e => {
+    $('#lista-relatorio').slideToggle()
 })
 
 $(".fa-search").click(function(event) {

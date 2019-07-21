@@ -1,30 +1,64 @@
 main {
-    justify-content: space-around;
+    display: flex;
 }
 
 #sidebar {
-    position: fixed;
-    background-color: #17233B;
-    width: 90%;
-    max-width: 350px;;
+    background-color: white;
+    max-width: 300px;;
     min-height: 100vh;
-    width: 20%;
 }
 
-.sidebar-on {
+#nome-foto {
     
-}
-
-.sidebar-off {
-
 }
 
 #content {
-    width: 75%;
-    margin-left: 340px;
+    flex-grow: 3;
+    padding: 15px;
+    background-color: #EFF3F7;
 }
 
 
-footer {
-    
+.element-sidebar {
+    background-color: white;
+
+    position: relative;
+    transition: 3s;
+
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.element-sidebar:hover {
+    background-color: #EFF3F7;
+}
+
+.element-sidebar i {
+    transition: 0.5s;
+}
+
+.element-sidebar:hover i {
+    transform: rotate(360deg);
+}
+
+.element-sidebar-into {
+
+    position: relative;
+    transition: 3s;
+
+    font-weight: 500;
+
+}
+
+#relatorios {
+    cursor: pointer;
+}
+
+@media screen and (max-width:992px) {
+
+    #sidebar {
+        position: fixed;
+        z-index: 9999;
+    }
+
 }

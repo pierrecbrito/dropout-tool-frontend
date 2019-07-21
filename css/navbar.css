@@ -4,22 +4,9 @@
     border-radius: 50%;
 }
 
-.nav-esquerda, .nav-procura {
-    width: 80%;
-    height: 100vh;
-    position: fixed;
-    z-index: 2;
-    display: none;
-    border-top: #17233B solid 2px;
-}
 
-.nav-esquerda .list-group-item:hover {
+.list-group-item:hover {
     transform: none;
-}
-
-.nav-esquerda {
-    left: 0;
-    box-shadow: 250px 0px 0px 0px rgba(0,0,0,0.75);
 }
 
 .nav-procura {
@@ -28,9 +15,9 @@
 }
 
 /* Questões de visibilidade */
-.dropdown, #input-search, #casa-desktop, #casa-desktop::before {
+/*.dropdown, #input-search, #casa-desktop, #casa-desktop::before {
     display: none !important;
-}
+}*/
 
 #casa-mobile, #casa-mobile::before {
     display: block !important;
@@ -47,12 +34,12 @@
         display: block !important;
     }
     
-    #casa-mobile, #casa-mobile::before, .fa-bars::before, .fa-bars, .nav-esquerda {
+    /*#casa-mobile, #casa-mobile::before, .fa-bars::before, .fa-bars, .nav-esquerda {
         display: none !important;
-    }
+    }*/
 
     .fa-search, .fa-home {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
 }

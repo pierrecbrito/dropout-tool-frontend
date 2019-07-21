@@ -30,5 +30,8 @@ body, main {
     transform: translateX(10px);
 }
 
-
+.text-upper {
+    font-size: 40px;
+    font-weight: bold;
+}
 
