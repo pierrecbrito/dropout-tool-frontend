@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Dropout Tool | Cadastro</title>
+      <title>Dropout Tool | Cadastrar</title>
       <link rel="icon" href="../img/favicon.png">
 
       <!-- Reset CSS -->
@@ -15,14 +15,14 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
       <!-- My CSS's -->
       <link rel="stylesheet" href="../css/style.css">
-      <link rel="stylesheet" href="../css/login.css">   
+      <link rel="stylesheet" href="../css/auth.css">   
   </head>
   <body>
 
       <main class="vh-100 d-flex justify-content-center align-items-center">
             <div id="visual-container"></div>
             <form class="bg-white shadow p-4 pt-5 w-100 position-relative" id="formulario" action="paginas/overview.html">
-              <h3 id="logo" class="text-center mb-5">Dropout Tool | <span class="text-muted font-weight-normal ml-1">Cadastro</span></h3>
+              <h3 id="logo" class="text-center mb-5">Dropout Tool | <span class="text-muted font-weight-normal">Cadastrar</span></h3>
 
               <!-- AVISO DE LOGIN ERRADO -->
               <div class="alert alert-danger mt-1 rounded-0" role="alert">
@@ -33,7 +33,7 @@
                   <a class="alert-link" href="https://suap.ifrn.edu.br/accounts/login/" target="_blank">SUAP</a>.
               </div>
 
-              <!-- CAMPPOS DE TEXTO -->
+              <!-- CAMPOS DE TEXTO -->
               <label for="campo_matricula" class="mt-1 font-weight-bold">Matrícula: </label>
               <input type="text" name="matricula" class="form-control rounded-0 text-body" id="campo_matricula" required="true">
 
@@ -43,6 +43,14 @@
                   <div class="input-group-append">
                     <span class="input-group-text rounded-0" id="olho"><i class="far fa-eye" id="icone-olho"></i></span>
                   </div>
+              </div>
+
+              <!-- Confirmação do termos -->
+              <div id="container-checkbox" class="text-center mt-4">
+                <input class="form-check-input" type="checkbox" value="" id="termos" required>
+                <label class="form-check-label" for="termos">
+                   Confirmo que li e concordo com os <a href="#" class="text-primary">termos</a>
+                </label>
               </div>
 
               <button class="btn mt-4 font-weight-bold w-100">Entrar</button>
