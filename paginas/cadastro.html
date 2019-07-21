@@ -49,7 +49,7 @@
               <div id="container-checkbox" class="text-center mt-4">
                 <input class="form-check-input" type="checkbox" value="" id="termos" required>
                 <label class="form-check-label" for="termos">
-                   Confirmo que li e concordo com os <a href="#" class="text-primary">termos</a>
+                   Confirmo que li e concordo com os <a href="#" class="text-primary"  data-toggle="modal" data-target="#modal-termos">termos</a>
                 </label>
               </div>
 
@@ -57,6 +57,38 @@
               <p id="copy" class="text-center text-muted mt-3"> &copy; 2019 IFRN | Integrado ao <a href="https://suap.ifrn.edu.br/accounts/login/" target="_blank">SUAP</a></p>
               
           </form>
+
+
+          <!-- MODAL DOS TERMOS -->
+          <div class="modal fade" id="modal-termos"  tabindex="-1" role="dialog" aria-labelledby="modal-info" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content rounded-0">
+                  <div class="modal-header">
+                    <h5 class="modal-title">
+                      <i class="fas fa-file-alt mr-2"></i> Termos do sistema
+                    </h5>
+                  </div>
+                  <div class="modal-body">
+                      <p>
+                          Concordando com os termos você está aceitando: <br/>
+                          1. bla bla bla bla bla <br/>
+                          2. bla bla bla bla bla <br/>
+                          3. bla bla bla bla bla <br/>
+                          4. bla bla bla bla bla <br/>
+                          5. bla bla bla bla bla <br/>
+                      </p>
+                      <p>
+                          Possui comunicação com o SUAP (Sistema Unificado de Administração Pública), portanto faça o login com a matrícula
+                          e a senha com que você tem acesso a ele.
+                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+            </div>
+        </div>
       </main>
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
