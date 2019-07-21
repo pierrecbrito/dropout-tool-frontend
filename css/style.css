@@ -11,16 +11,12 @@ a:hover {
 }
 
 .btn {
-    background-color: #17233B;
+    background-color: #17233B !important;
     box-shadow: none !important;
     color: #FFFFFF !important;
     cursor: pointer;
     border-radius: 0;
-}
-
-.btn:hover, .btn:active {
-    border-color: #17233B !important;
-    background-color: #17233B;
+    border: none;
 }
 
 .form-control, .form-control:hover {
@@ -38,3 +34,4 @@ a:hover {
 .dropdown-item:active {
 	background-color: white !important;
 }
+
