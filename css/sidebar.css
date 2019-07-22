@@ -1,23 +1,21 @@
-main {
-    display: flex;
-}
-
 #sidebar {
     background-color: white;
-    max-width: 300px;;
+    max-width: 250px;;
     min-height: 100vh;
+    position: fixed;
 }
 
-#nome-foto {
-    
+#foto-perfil {
+    border-radius: 50%;
+    width: 50px;;
 }
 
 #content {
-    flex-grow: 3;
     padding: 15px;
     background-color: #EFF3F7;
+    width: calc(100% - 250px);
+    margin-left: 250px;
 }
-
 
 .element-sidebar {
     background-color: white;
