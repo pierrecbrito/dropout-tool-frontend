@@ -7,7 +7,7 @@ a:hover {
 }
 
 #logo {
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .btn {
@@ -33,5 +33,9 @@ a:hover {
 
 .dropdown-item:active {
 	background-color: white !important;
+}
+
+.container {
+    max-width: 1350px;
 }
 

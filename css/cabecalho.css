@@ -1,0 +1,40 @@
+html, body {
+    background-color: #F1F1F7;
+}
+
+#cabecalho {
+    background-color: #17233B;
+    padding-bottom: 100px;
+}
+
+#logo {
+    color: #FFFFFF !important;
+}
+
+#content {
+    margin-top: -65px;
+    padding-bottom: 200px;
+    padding: 0 0 200px 0;
+}
+
+.nav-item, .nav-link {
+    color: #FFFFFF !important;
+    font-weight: 700;
+}
+
+#cabecalho-content {
+    min-height: 65px;
+    max-height: 65px;
+}
+
+#cabecalho-content * {
+    height: 100%;
+}
+
+#titulo-content {
+    color: #17233B;
+  
+}
+
+
+
