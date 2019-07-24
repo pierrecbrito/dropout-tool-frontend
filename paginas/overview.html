@@ -17,43 +17,407 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/overview.css">
         <link rel="stylesheet" href="../css/cabecalho.css">
+        <link rel="stylesheet" href="../css/sidebar.css">
     </head>
     <body>
-    <header id="cabecalho" class="pt-4">
-        <div class="container d-fle d-flex justify-content-between">
-            <h1 id="logo" class="h3 mb-3">Dropout Tool</h1>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Relatórios</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pierre Brito</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Meu perfil</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-danger" href="#">Sair</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="container bg-white rounded shadow-sm" id="content">
-        <div id="cabecalho-content" class="rounded-top px-5 py-3 shadow-sm">
+    <aside id="sidebar" class="shadow">
+        <h1 id="logo" class="h3 my-5 text-center">Dropout Tool</h1>
+        <nav class="mt-5">
+            <ul class="">
+                <li class="link-wrapper d-block">
+                    <a class="link d-block pl-4 py-2" href="#">
+                        <i class="fas fa-home mr-2"></i>Início
+                    </a>
+                </li>
+                <li class="link-wrapper d-block">
+                    <a class="link d-block pl-4 py-2 ativo" href="#">
+                        <i class="fas fa-link mr-2"></i> Link 2
+                    </a>
+                </li>
+                <li class="link-wrapper d-block">
+                    <a class="link d-block pl-4 py-2" href="#">
+                        <i class="fas fa-link mr-2"></i> Link 3
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="bg-white rounded shadow" id="content">
+        <div id="cabecalho-content" class="rounded-top py-3 shadow-sm">
             <h2 class="h3 text-center" id="titulo-content">Overview</h2>
+        </div>
+
+        <div class="w-100 px-2 mt-5">
+            <div id="chart-container" class="shadow-sm"></div>
+        </div>
+  
+        <div class="row mx-0 px-1 mt-5">
+            <div class="col-sm-6 shadow-sm">
+                <div id="chart-container-pizza"></div>
+            </div>
+            <div class="col-sm-6 shadow-sm">
+                <div id="chart-container-mapa"></div>
+            </div>
         </div>
     </main>
         
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="../js/nav.js"></script>
+      <!-- FusionCharts -->
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <!-- jQuery-FusionCharts -->
+    <script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+    <!-- Fusion Theme -->
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script>
+        $("#chart-container").insertFusionCharts({
+            type: "area2d",
+            width: "100%",
+            height: "400",
+            dataFormat: "json",
+            dataSource: {
+                chart: {
+                caption: "Evasão ao longo dos anos",
+                yaxisname: "Quantidade de alunos evadidos",
+                subcaption: "2012-2019",
+                legendposition: "Center",
+                drawanchors: "0",
+                showvalues: "0",
+                plottooltext: "<b>$dataValue</b> alunos evadidos",
+                theme: "fusion"
+                },
+                data: [
+                {
+                    label: "2012",
+                    value: "5"
+                },
+                {
+                    label: "2013",
+                    value: "8"
+                },
+                {
+                    label: "2014",
+                    value: "12"
+                },
+                {
+                    label: "2015",
+                    value: "9"
+                },
+                {
+                    label: "2016",
+                    value: "3"
+                },
+                {
+                    label: "2017",
+                    value: "2"
+                },
+                {
+                    label: "2018",
+                    value: "4"
+                },
+                {
+                    label: "2019",
+                    value: "7"
+                }
+                ]
+            }
+            });
+
+        $("#chart-container-pizza").insertFusionCharts({
+            type: "doughnut3d",
+            width: "100%",
+            height: "400",
+            dataFormat: "json",
+            dataSource: {
+            chart: {
+            caption: "Fatores que influenciaram na evasão",
+            subcaption: "2012-2019",
+            enablesmartlabels: "1",
+            showlabels: "1",
+            numbersuffix: " MMbbl",
+            usedataplotcolorforlabels: "1",
+            plottooltext: "$label, <b>$value</b> %",
+            theme: "fusion"
+            },
+            data: [
+            {
+                label: "Localidade",
+                value: "30"
+            },
+            {
+                label: "Condição financeira",
+                value: "50"
+            },
+            {
+                label: "Nota",
+                value: "20"
+            }
+            ]
+        }
+        });
+
+        $("#chart-container-mapa").insertFusionCharts({
+            type: "maps/brazil",
+            width: "100%",
+            height: "100%",
+            dataFormat: "json",
+            dataSource: {
+                chart: {
+                caption: "Alunos do curso de Informática",
+                subcaption: "(per adult per day)",
+                legendposition: "BOTTOM",
+                entitytooltext: "$lname: <b>$datavalue </b>estudantes",
+                legendcaption: "Alunos por região",
+                entityfillhovercolor: "#FFCDD2",
+                theme: "fusion"
+                },
+                colorrange: {
+                gradient: "0",
+                color: [
+                    {
+                    maxvalue: "4",
+                    displayvalue: "2-4",
+                    code: "#EF9A9A"
+                    },
+                    {
+                    maxvalue: "6",
+                    displayvalue: "4-6",
+                    code: "#EF5350"
+                    },
+                    {
+                    maxvalue: "8",
+                    displayvalue: "6-8",
+                    code: "#E53935"
+                    },
+                    {
+                    maxvalue: "10",
+                    displayvalue: "8-10",
+                    code: "#C62828"
+                    },
+                    {
+                    maxvalue: "11",
+                    displayvalue: "No data available",
+                    code: "#FFEBEE"
+                    }
+                ]
+                },
+                data: [
+                {
+                    data: [
+                    {
+                        id: "021",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "002",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "025",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "034",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "027",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "043",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "028",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "044",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "026",
+                        value: "11"
+                    },
+                    {
+                        id: "023",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "010",
+                        value: "6.4"
+                    },
+                    {
+                        id: "017",
+                        value: "4.5"
+                    },
+                    {
+                        id: "042",
+                        value: "5.7"
+                    },
+                    {
+                        id: "018",
+                        value: "6.4"
+                    },
+                    {
+                        id: "030",
+                        value: "4.9"
+                    },
+                    {
+                        id: "039",
+                        value: "2.9"
+                    },
+                    {
+                        id: "029",
+                        value: "6.4"
+                    },
+                    {
+                        id: "005",
+                        value: "7"
+                    },
+                    {
+                        id: "013",
+                        value: "5.1"
+                    },
+                    {
+                        id: "038",
+                        value: "7.1"
+                    },
+                    {
+                        id: "032",
+                        value: "5.4"
+                    },
+                    {
+                        id: "040",
+                        value: "6.7"
+                    },
+                    {
+                        id: "003",
+                        value: "6.5"
+                    },
+                    {
+                        id: "037",
+                        value: "6.1"
+                    },
+                    {
+                        id: "008",
+                        value: "6.4"
+                    },
+                    {
+                        id: "006",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "001",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "015",
+                        value: "9.9"
+                    },
+                    {
+                        id: "045",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "007",
+                        value: "7.6"
+                    },
+                    {
+                        id: "024",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "033",
+                        value: "6"
+                    },
+                    {
+                        id: "016",
+                        value: "7"
+                    },
+                    {
+                        id: "036",
+                        value: "7.8"
+                    },
+                    {
+                        id: "009",
+                        value: "6.2"
+                    },
+                    {
+                        id: "014",
+                        value: "6.1"
+                    },
+                    {
+                        id: "031",
+                        value: "6.5"
+                    },
+                    {
+                        id: "041",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "004",
+                        value: "5.4"
+                    },
+                    {
+                        id: "022",
+                        value: "5.3"
+                    },
+                    {
+                        id: "020",
+                        value: "3.5"
+                    },
+                    {
+                        id: "011",
+                        value: "4.8"
+                    },
+                    {
+                        id: "012",
+                        value: "4"
+                    },
+                    {
+                        id: "046",
+                        value: "8.3"
+                    },
+                    {
+                        id: "019",
+                        value: "5.6"
+                    },
+                    {
+                        id: "035",
+                        value: "11",
+                        tooltext: "No data available"
+                    },
+                    {
+                        id: "047",
+                        value: "11",
+                        tooltext: "No data available"
+                    }
+                    ]
+                }
+                ]
+            }
+            });  
+    </script>
     </body>
 </html>

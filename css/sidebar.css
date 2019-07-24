@@ -1,0 +1,35 @@
+#sidebar {
+    max-width: 270px;
+    width: 270px;
+    position: fixed;
+    left : 0;
+    min-height: 100vh;
+    background: linear-gradient(#FFFFFF 95%,#17233B 5%);
+}
+
+#content {
+    width: calc(100% - 270px);
+    margin-left: 270px;
+}
+
+.link-wrapper {
+    transition: 0.5s;
+}
+
+.link-wrapper:hover .link {
+    transition: 0.25s;
+    color: #17233B;
+    background-color: #F1F1F1;
+    padding-left: 35px !important;
+}
+
+.link {
+    color: #686980;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.ativo {
+    color: #00B9EE !important;
+    border-left: #17233B solid 8px;
+}

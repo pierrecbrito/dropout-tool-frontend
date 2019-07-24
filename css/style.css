@@ -3,11 +3,11 @@ a:hover {
 }
 
 #logo, a, h1, h2, h3, h4, h5, h6, label {
-    color: #17233B !important;
+    color: #17233B;
 }
 
 #logo {
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .btn {
@@ -35,7 +35,4 @@ a:hover {
 	background-color: white !important;
 }
 
-.container {
-    max-width: 1350px;
-}
 

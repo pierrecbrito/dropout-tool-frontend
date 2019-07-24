@@ -4,23 +4,14 @@ html, body {
 
 #cabecalho {
     background-color: #17233B;
-    padding-bottom: 100px;
 }
 
-#logo {
-    color: #FFFFFF !important;
-}
 
 #content {
-    margin-top: -65px;
     padding-bottom: 200px;
-    padding: 0 0 200px 0;
+    padding: 0 0 250px 0;
 }
 
-.nav-item, .nav-link {
-    color: #FFFFFF !important;
-    font-weight: 700;
-}
 
 #cabecalho-content {
     min-height: 65px;
