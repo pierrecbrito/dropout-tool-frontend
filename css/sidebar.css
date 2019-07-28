@@ -1,15 +1,16 @@
 #sidebar {
     max-width: 270px;
-    width: 270px;
+    width: 100%;
     position: fixed;
     left : 0;
     min-height: 100vh;
     background: linear-gradient(#FFFFFF 95%,#17233B 5%);
+    z-index: 9999;
+    box-shadow: 250px 0px 0px 0px rgba(0,0,0,0.46);
 }
 
 #content {
-    width: calc(100% - 270px);
-    margin-left: 270px;
+    transition: 0.25s;
 }
 
 .link-wrapper {
@@ -33,3 +34,30 @@
     color: #00B9EE !important;
     border-left: #17233B solid 8px;
 }
+
+.content-without-sidebar {
+    width: 100% !important;
+    margin-left: 0 !important;
+}
+
+.fa-bars {
+    cursor: pointer;
+}
+
+
+@media (min-width: 991.98px) { 
+
+    #content {
+        width: calc(100% - 270px);
+        margin-left: 270px;
+    }
+
+    #barra-mobile {
+        display: none !important;
+    }
+
+    #sidebar {
+        box-shadow: 5px 0px 2px -3px rgba(0,0,0,0.46);
+    }
+
+ }

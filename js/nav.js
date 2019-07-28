@@ -3,7 +3,8 @@ $(".fa-bars").click(function(event) {
     //$('.nav-esquerda').toggleClass("w-100")
     //$('.nav-esquerda').toggleClass("w-0")
 
-    $('.nav-esquerda').animate({width: 'toggle'});
+    $('#content').toggleClass('content-without-sidebar')
+    $('#sidebar').toggle(250)
 
 })
 
