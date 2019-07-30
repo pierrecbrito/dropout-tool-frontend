@@ -1,3 +1,20 @@
+html, body {
+    background-color: #F1F1F7;
+}
+
+#cabecalho-content {
+    min-height: 65px;
+    max-height: 65px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+main {
+    margin-top: 65px;
+}
+
 a:hover {
     text-decoration: none;
 }

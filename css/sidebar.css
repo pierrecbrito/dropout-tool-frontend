@@ -1,12 +1,12 @@
 #sidebar {
-    max-width: 270px;
     width: 100%;
     position: fixed;
     left : 0;
+    top: 0;
     min-height: 100vh;
     background: linear-gradient(#FFFFFF 99%,#17233B 1%);
     z-index: 9999;
-    box-shadow: 250px 0px 0px 0px rgba(0,0,0,0.46);
+    box-shadow: 0 5rem rgba(0,0,0,1);
 }
 
 #content {
@@ -51,6 +51,7 @@
     background-color: #F1F1F1;
 }
 
+
 @media (min-width: 991.98px) { 
 
     #content {
@@ -63,7 +64,8 @@
     }
 
     #sidebar {
-        box-shadow: 5px 0px 2px -3px rgba(0,0,0,0.46);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+        max-width: 270px;
     }
 
  }

@@ -1,11 +1,11 @@
-$(".fa-bars").click(function(event) {
-    //$('.nav-esquerda').toggleClass("w-100")
-    //$('.nav-esquerda').toggleClass("w-0")
+toggle()
 
+function toggle(e = null) {
     $('#content').toggleClass('content-without-sidebar')
     $('#sidebar').toggle(250)
+}
 
-})
+$(".fa-bars").click(toggle)
 
 $('#relatorios').click(e => {
     $('#lista-relatorio').slideToggle()
