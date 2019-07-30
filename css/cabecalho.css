@@ -6,7 +6,6 @@ html, body {
     background-color: #17233B;
 }
 
-
 #content {
     padding-bottom: 200px;
     padding: 0 0 250px 0;
@@ -18,9 +17,6 @@ html, body {
     max-height: 65px;
 }
 
-#cabecalho-content * {
-    height: 100%;
-}
 
 #titulo-content {
     color: #17233B;
