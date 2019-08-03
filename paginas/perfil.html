@@ -22,7 +22,7 @@
         <aside id="sidebar">
             <h1 id="logo" class="h3 my-5 text-center">Dropout Tool <i id="barra-mobile" class="fas fa-bars d-inline-block mx-2 h4"></i></h1>
             <nav class="mt-5">
-                <form class="form-inline pl-4 mb-2">
+                <form class="form-inline pl-4 mb-2" action="pesquisa.html" method="GET">
                     <input type="text" class="form-control" id="campo-pesquisar" placeholder="Pesquisar...">
                     <button type="submit" class="btn" id="botao-pesquisar"><i class="fas fa-search"></i></button>
                 </form>
@@ -88,18 +88,20 @@
                             <small class="text-muted d-block">Fonte: SUAP</small>
                         </h3>
                         
-                        <div class="text-left mt-4">
-                            <i class="fas fa-envelope-open text-muted mr-2"></i> carlospierre07@gmail.com<br/>
-                            <i class="fas fa-phone text-muted mr-2"></i> (84) 9-8721-0669<br/>
-                            <span class="">Possibilidade de evasão: <span class="badge badge-pill badge-success">Baixa</span>
-                            <span class="badge badge-pill badge-warning">Média</span>
-                            <span class="badge badge-pill badge-danger">Alta</span>
-                        </div>          
+                        <ul class="text-left mt-4">
+                            <li class="d-block mb-1"><i class="fas fa-envelope-open text-muted mr-2"></i> carlospierre07@gmail.com</li>
+                            <li class="d-block mb-1"><i class="fas fa-phone text-muted mr-2"></i> (84) 9-8721-0669</li>
+                            <li class="d-block mb-1">  
+                                <span class="">Possibilidade de evasão: <span class="badge badge-pill badge-success">Baixa</span>
+                                <span class="badge badge-pill badge-warning">Média</span>
+                                <span class="badge badge-pill badge-danger">Alta</span>
+                            </li>
+                        </ul>          
                     </div> 
               
 
                 <div class="row mt-2 mx-2">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 mt-1">
                         <div class="card h-100">
                             <div class="card-header text-left">
                                 <h6>Rota do aluno até o campus</h6>
@@ -107,14 +109,18 @@
                             <div class="card-body p-1 h-100" id="map">
                                 
                             </div> 
-                            <div class="card-footer right">
+                            <div class="card-footer">
                                 <div class="">
-                                    <span class="text-muted">A rota é calculada pelos serviços Google Maps </span>
+                                    <ul class="text-left mt-2">
+                                        <li class="d-block mb-1"> <span class="font-weight-bold">Endereço:</span> Rua engenheiro Luciano Barros N. 87</li>
+                                        <li class="d-block mb-1"> <span class="font-weight-bold">Distância:</span> 4.2Km</li>               
+                                    </ul>      
+                                    <span class="text-muted"><i class="fas fa-info-circle mr-2"></i>A rota é calculada pelos serviços Google Maps </span>
                                 </div>
                             </div>   
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 mt-1">
                         <div class="card">
                             <div class="card-header text-left">
                                 <h6>Gráfico das notas</h6>
