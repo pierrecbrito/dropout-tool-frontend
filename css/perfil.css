@@ -7,3 +7,43 @@
     position: absolute;
     right: 10px;
 }
+
+#painel-possibilidade {
+
+}
+
+#titulo-analise {
+    background-color: #17233B;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#chart-container-barras {
+    min-height: 300px;
+}
+
+#foto-perfil {
+    max-width: 180px;
+    margin-top: -100px;
+    z-index: 9999;
+}
+
+#painel-informativo {
+}
+
+#painel-design {
+    height: 90px;
+    background-color: #17233B;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#card-info-pessoais {
+    max-width: 500px;
+    margin: 165px auto 20px auto;
+}
+
+#map, #chart-container-barras {
+    min-height: 300px;
+}

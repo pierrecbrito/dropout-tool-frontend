@@ -51,6 +51,15 @@
     background-color: #F1F1F1;
 }
 
+#campo-pesquisar {
+    width: 80%;
+}
+
+#botao-pesquisar {
+    background-color: #FFFFFF !important;
+    color: #17233B !important;
+}
+
 
 @media (min-width: 991.98px) { 
 

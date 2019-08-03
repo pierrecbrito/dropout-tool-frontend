@@ -19,23 +19,27 @@
         <link rel="stylesheet" href="../css/perfil.css">
     </head>
     <body>
-        <aside id="sidebar" class="sha">
+        <aside id="sidebar">
             <h1 id="logo" class="h3 my-5 text-center">Dropout Tool <i id="barra-mobile" class="fas fa-bars d-inline-block mx-2 h4"></i></h1>
             <nav class="mt-5">
+                <form class="form-inline pl-4 mb-2">
+                    <input type="text" class="form-control" id="campo-pesquisar" placeholder="Pesquisar...">
+                    <button type="submit" class="btn" id="botao-pesquisar"><i class="fas fa-search"></i></button>
+                </form>
                 <ul class="">
                     <li class="link-wrapper d-block">
-                        <a class="link d-block pl-4 py-2 ativo" href="overview.html">
+                        <a class="link d-block pl-4 py-2" href="overview.html">
                             <i class="fas fa-home mr-2"></i>Início
                         </a>
                     </li>
                     <li class="link-wrapper d-block">
-                        <a class="link d-block pl-4 py-2" href="perfil.html">
+                        <a class="link d-block pl-4 py-2 ativo" href="perfil.html">
                             <i class="fas fa-user mr-2"></i> Perfil
                         </a>
                     </li>
                     <li class="link-wrapper d-block">
                         <a class="link d-block pl-4 py-2" href="#">
-                            <i class="fas fa-link mr-2"></i> Link 3
+                            <i class="fas fa-link mr-2"></i> Link
                         </a>
                     </li>
                     <li class="link-wrapper-dropdown d-block">
@@ -70,93 +74,63 @@
             </nav>
         </aside>
 
-        <div class="bg-white" id="content">
-            <div id="cabecalho-content" class="bg-white rounded-top py-3 px-3 d-flex align-content-center border-bottom">
+        <div id="content">
+            <div id="cabecalho-content" class="bg-white py-3 px-3 d-flex align-content-center border-bottom">
                 <i class="fas fa-bars h2"></i>
                 <h2 class="h3 text-center text-center flex-fill" id="titulo-content">Perfil</h2>
             </div>
-            
+    
             <main id="principal">
-                <div class="card bg-light shadow-sm text-center rounded bg-white" id="card-info-pessoais">
-                    <div class="card-header text-left">
-                        <h4>Dados gerais de Pierre Carlos de Brito</h4>
-                        <small class="text-muted">Fonte: SUAP</small>
-                    </div>
-                    <div class="card-body row">
-                            <div class="col-sm-4 d-flex align-items-center justify-content-center">
-                                <img src="../img/Me.jpg" alt="Imagem do perfil" class="img-thumbnail">
-                            </div>
-                            <div class="col-sm-8">
-                                <ul class="list-group">
-                                    <li class="list-group-item text-left m-0">
-                                        <strong>Nome completo:</strong> Pierre Carlos de Brito
-                                    </li>
-                                    <li class="list-group-item text-left m-0">
-                                        <strong>E-mail: </strong> carlospierre07@gmail.com
-                                    </li>
-                                    <li class="list-group-item text-left m-0">
-                                        <strong>Vínculo: </strong> Aluno
-                                    </li>
-                                    <li class="list-group-item text-left m-0">
-                                        <strong>Legenda: </strong> informação
-                                    </li>
-                                    <li class="list-group-item text-left m-0">
-                                        <strong>Legenda: </strong> informação
-                                    </li>
-                                    <li class="list-group-item text-left m-0">
-                                        <strong>Possibilidade de evasão:</strong> 
-                                        <span class="badge badge-success p-2">Baixa</span>
-                                        <span class="badge badge-warning p-2">Média</span>
-                                        <span class="badge badge-danger p-2">Alta</span>
-                                    </li>
-                                </ul>
-                            </div>
+                    <div class="bg-white py-4 text-center px-5 shadow-sm" id="card-info-pessoais">
+                        <img src="../img/Me.jpg" alt="Foto do perfil" id="foto-perfil">
+                        <h3 class="h5 mt-2 font-weight-bold">
+                            Dados gerais de Pierre Carlos de Brito 
+                            <small class="text-muted d-block">Fonte: SUAP</small>
+                        </h3>
+                        
+                        <div class="text-left mt-4">
+                            <i class="fas fa-envelope-open text-muted mr-2"></i> carlospierre07@gmail.com<br/>
+                            <i class="fas fa-phone text-muted mr-2"></i> (84) 9-8721-0669<br/>
+                            <span class="">Possibilidade de evasão: <span class="badge badge-pill badge-success">Baixa</span>
+                            <span class="badge badge-pill badge-warning">Média</span>
+                            <span class="badge badge-pill badge-danger">Alta</span>
+                        </div>          
                     </div> 
-                    <div class="card-footer right">
-                        <div class="text-right">
-                            <button class="btn btn-primary">Ação 1</button>
-                            <button class="btn btn-primary">Ação 2</button>
-                            <button class="btn btn-primary">Ação 3</button>
-                        </div>
-                    </div>   
-                </div>
+              
 
-                <div class="row mt-3 p-2">
-                    <div class="card col-sm shadow-sm p-0 m-2">
-                        <div class="card-header text-left">
-                            <h6>Rota do aluno até o campus</h6>
-                        </div>
-                        <div class="card-body p-1" id="map">
-                            
-                        </div> 
-                        <div class="card-footer right">
-                            <div class="text-right">
-                                <button class="btn btn-primary">Google Maps</button>
+                <div class="row mt-2 mx-2">
+                    <div class="col-sm-6">
+                        <div class="card h-100">
+                            <div class="card-header text-left">
+                                <h6>Rota do aluno até o campus</h6>
                             </div>
-                        </div>   
+                            <div class="card-body p-1 h-100" id="map">
+                                
+                            </div> 
+                            <div class="card-footer right">
+                                <div class="">
+                                    <span class="text-muted">A rota é calculada pelos serviços Google Maps </span>
+                                </div>
+                            </div>   
+                        </div>
                     </div>
-                    <div class="card col-sm shadow-sm p-0 m-2">
-                        <div class="card-header text-left">
-                            <h6>Gráfico das notas</h6>
-                        </div>
-                        <div class="card-body">
-                            <img src="../img/grafico_notas.png" alt="Gráfico de notas do aluno" class="img-fluid">
-                        </div> 
-                        <div class="card-footer right">
-                            <div class="text-right">
-                                <button class="btn btn-primary">Ação 1</button>
-                                <button class="btn btn-primary">Ação 2</button>
-                                <button class="btn btn-primary">Ação 3</button>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-header text-left">
+                                <h6>Gráfico das notas</h6>
                             </div>
-                        </div>   
+                            <div class="card-body">
+                                <div id="chart-container-barras"></div>
+                            </div> 
+                        </div> 
                     </div>
                 </div>          
             </main>
+            <footer class="text-center py-3">
+                <span class="text-muted h6" id="text-copy">&copy; 2019: IFRN - Campus São Gonçalo do Amarante</span>
+            </footer>
         </div>
 
-    <footer class="text-center pt-3 pb-3">
-        <span class="text-muted h6" id="text-copy">&copy; 2019: IFRN - Campus São Gonçalo do Amarante</span>
-    </footer>
         
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -164,13 +138,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="../js/nav.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqoC9nDkXIZXFZNGHeG4_XKVJqiqI9tf0&amp;callback=initMap" async="" defer=""></script>
+    <!-- FusionCharts -->
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <!-- jQuery-FusionCharts -->
+    <script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
+    <!-- Fusion Theme -->
+    <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
     <script>
         function initMap() {
             var pointA = new google.maps.LatLng(-5.789408, -35.337836), //,
                 pointB = new google.maps.LatLng(-5.790083, -35.307696), //,
                 myOptions = {
                     zoom: 7,
-                    center: pointA
+                    center: pointA,
                 },
                 map = new google.maps.Map(document.getElementById('map'), myOptions),
                 // Instantiate a directions service.
@@ -183,8 +164,6 @@
             calculateAndDisplayRoute(directionsService, directionsDisplay, pointA, pointB);
 
         }
-
-
 
         function calculateAndDisplayRoute(directionsService, directionsDisplay, pointA, pointB) {
             directionsService.route({
@@ -203,7 +182,35 @@
         }
 
         initMap();
+
+        $("#chart-container-barras").insertFusionCharts({
+            type: "column2d",
+            width: "100%",
+            height: "100%",
+            dataFormat: "json",
+            dataSource: {
+                chart: {
+                subcaption: "Média das notas nas áreas do conhecimento",
+                xaxisname: "Matérias",
+                yaxisname: "Notas",
+                theme: "fusion"
+                },
+                data: [
+                {
+                    label: "Ciências Exatas e da Terra",
+                    value: "50"
+                },
+                {
+                    label: "Ciências Biológica",
+                    value: "30"
+                },
+                {
+                    label: " Ciências Humanas",
+                    value: "80"
+                }
+                ]
+            }
+            });  
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqoC9nDkXIZXFZNGHeG4_XKVJqiqI9tf0&callback=initMap" async defer></script>
     </body>
 </html>
