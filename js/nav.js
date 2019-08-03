@@ -13,3 +13,7 @@ $('#relatorios').click(e => {
     $('#lista-relatorio').slideToggle()
 })
 
+$('#link-pesquisar').click(e => {
+    $('#campo-pesquisar').focus()
+})
+

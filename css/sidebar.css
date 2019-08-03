@@ -41,6 +41,7 @@
 
 .fa-bars {
     cursor: pointer;
+    z-index: 9999;
 }
 
 #relatorios {
@@ -58,6 +59,15 @@
 #botao-pesquisar {
     background-color: #FFFFFF !important;
     color: #17233B !important;
+}
+
+#link-pesquisar {
+    cursor: pointer;
+}
+
+#titulo-content {
+    position: relative;
+    left: -42px;
 }
 
 
